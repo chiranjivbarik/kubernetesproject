@@ -4,7 +4,7 @@ RUN yum install -y httpd \
 #RUN DEBIAN_FRONTEND=noninteractive apt-get install apache2 -y \
     zip \
     unzip
-ADD https://https://www.free-css.com/assets/files/free-css-templates/download/page277/jd.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page277/jd.zip /var/www/html
 WORKDIR /var/www/html
 RUN unzip jd.zip
 RUN cp -rvf jd/* .
