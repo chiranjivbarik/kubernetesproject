@@ -4,9 +4,9 @@ RUN yum install -y httpd \
 #RUN DEBIAN_FRONTEND=noninteractive apt-get install apache2 -y \
     zip \
     unzip
-ADD https://www.free-css.com/assets/files/free-css-templates/download/page277/jd.zip /var/www/html
+ADD https://www.free-css.com/assets/files/free-css-templates/download/page275/hangover.zip /var/www/html
 WORKDIR /var/www/html
-RUN unzip jd.zip
-RUN cp -rvf jd/* .
+RUN unzip hangover.zip
+RUN cp -rvf hangover-master/* .
 CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 EXPOSE 80
